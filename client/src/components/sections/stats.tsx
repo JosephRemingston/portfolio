@@ -23,12 +23,12 @@ export default function Stats() {
               </div>
               <div className="space-y-4">
                 <img
-                  src="https://github-readme-stats.vercel.app/api?username=joseph-remingston&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117"
+                  src="https://github-readme-stats.vercel.app/api?username=JosephRemingston&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117"
                   alt="GitHub Stats"
                   className="w-full"
                 />
                 <img
-                  src="https://github-readme-streak-stats.herokuapp.com/?user=joseph-remingston&theme=radical&hide_border=true&background=0d1117"
+                  src="https://github-readme-streak-stats.herokuapp.com/?user=JosephRemingston&theme=radical&hide_border=true&background=0d1117"
                   alt="GitHub Streak"
                   className="w-full"
                 />
@@ -44,7 +44,7 @@ export default function Stats() {
                 <h3 className="text-xl font-semibold text-white glow-text">LeetCode Stats</h3>
               </div>
               <img
-                src="https://leetcard.jacoblin.cool/joseph-remingston?theme=dark&font=Roboto&ext=heatmap"
+                src="https://leetcard.jacoblin.cool/JosephRemingston?theme=dark&font=Roboto&ext=heatmap"
                 alt="LeetCode Stats"
                 className="w-full"
               />
