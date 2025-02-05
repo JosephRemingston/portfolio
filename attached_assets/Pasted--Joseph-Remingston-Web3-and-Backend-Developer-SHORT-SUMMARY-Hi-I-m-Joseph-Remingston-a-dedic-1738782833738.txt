@@ -1,0 +1,76 @@
+
+Joseph Remingston
+Web3 and Backend Developer
+
+SHORT SUMMARY
+Hi, I’m Joseph Remingston, a dedicated Web3 and Backend Developer with a passion for crafting innovative and impactful digital solutions. I specialize in building decentralized applications (DApps) powered by blockchain technology and designing robust full-stack backend systems that drive seamless and scalable user experiences.
+
+Technologies I Work With:
+Web3: Ethereum, Solidity, Hardhat, Ethers.js, and smart contract development
+
+Backend Development: Node.js, Express.js, Flask, and Django
+
+Frontend Integration: React.js and Next.js for dynamic user interfaces
+
+Databases: MongoDB, PostgreSQL, and MySQL for efficient data management
+
+Tools and Platforms: Git, Docker, AWS, Binance API, and Postman for API testing
+
+ 
+
+With a strong foundation in blockchain technologies, I’m committed to exploring the endless possibilities of Web3. My projects often involve integrating crypto wallets, tokenizing assets, and creating secure, transparent systems that redefine how users interact with technology.
+
+ 
+
+Beyond Web3, I excel in traditional backend development, designing APIs, server-side architectures, and database solutions to power dynamic, data-driven applications. My approach emphasizes clean code, performance optimization, and real-world usability.
+
+Whether working on decentralized platforms or traditional full-stack applications, I strive to merge cutting-edge innovation with practical problem-solving to deliver solutions that stand out.
+
+IMG_1429.jpeg
+Education:
+Btech Computer Science and Engineering
+
+VIT-APUniversity , Amaravati , Andhra Pradesh
+
+Skills
+Web3 Development:
+
+Blockchain platforms: Ethereum
+
+Smart contract development: Solidity, Hardhat
+
+Libraries and tools: Ethers.js, Web3.js
+
+Crypto wallet integration
+
+ 
+
+Backend Development:
+
+Programming languages: Python, JavaScript, Node.js
+
+Frameworks: Express.js, Flask, Django
+
+API development: REST, GraphQL
+
+Database Management:
+
+PostgreSQL,
+
+MySQL
+
+ MongoDB
+
+​
+
+ 
+
+DevOps and Tools:
+
+Containerization: Docker
+
+Cloud services: AWS
+
+Version control: Git, GitHub
+
+API testing: Postman
