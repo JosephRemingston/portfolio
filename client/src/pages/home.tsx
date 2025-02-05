@@ -4,7 +4,7 @@ import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Projects from "@/components/sections/projects";
 import Experience from "@/components/sections/experience";
-import Blog from "@/components/sections/blog";
+import Stats from "@/components/sections/stats";
 import Contact from "@/components/sections/contact";
 
 const BackgroundAnimation = () => (
@@ -30,7 +30,7 @@ export default function Home() {
         <About />
         <Projects />
         <Experience />
-        <Blog />
+        <Stats />
         <Contact />
       </motion.main>
     </div>
