@@ -11,10 +11,10 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-[#2C3E50] mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 glow-text">
             Hi, I'm Joseph Remingston
           </h1>
-          <p className="text-xl text-[#34495E] mb-8">
+          <p className="text-xl text-white/90 mb-8">
             A dedicated Web3 and Backend Developer with a passion for crafting innovative and impactful digital solutions, specializing in blockchain technology and full-stack systems.
           </p>
           <Button
@@ -31,10 +31,15 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="relative aspect-square"
         >
+          <motion.div
+            className="absolute inset-0 rounded-full bg-blue-500/20"
+            animate={{ scale: [1, 1.05, 1] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          />
           <img
             src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa"
             alt="Profile"
-            className="rounded-full object-cover shadow-xl"
+            className="rounded-full object-cover shadow-xl relative z-10"
           />
         </motion.div>
       </div>

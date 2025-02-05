@@ -36,8 +36,8 @@ export default function Projects() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-bold text-[#2C3E50] mb-8">Projects</h2>
-        
+        <h2 className="text-3xl font-bold text-white mb-8 glow-text">Projects</h2>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
@@ -47,23 +47,27 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
+              <Card className="bg-black/40 backdrop-blur-md border-white/10 overflow-hidden group">
+                <motion.div className="relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </motion.div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-[#2C3E50] mb-2">
+                  <h3 className="text-xl font-semibold text-white glow-text mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-[#34495E]">{project.description}</p>
+                  <p className="text-white/80">{project.description}</p>
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex gap-4">
                   <Button
                     variant="outline"
                     size="sm"
                     onClick={() => window.open(project.github)}
+                    className="border-white/20 hover:bg-white/10"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     Code

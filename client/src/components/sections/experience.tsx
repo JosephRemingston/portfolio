@@ -35,7 +35,7 @@ export default function Experience() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-bold text-[#2C3E50] mb-8">Experience</h2>
+        <h2 className="section-heading">Experience</h2>
 
         <div className="space-y-6">
           {experiences.map((exp, index) => (
@@ -46,18 +46,18 @@ export default function Experience() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card>
+              <Card className="bg-black/40 backdrop-blur-md border-white/10 hover:bg-black/50 transition-colors">
                 <CardContent className="p-6 flex items-start gap-4">
-                  <div className="p-3 bg-[#ECF0F1] rounded-lg">
-                    <exp.icon className="h-6 w-6 text-[#2C3E50]" />
+                  <div className="p-3 bg-[#3498DB]/20 rounded-lg">
+                    <exp.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-[#2C3E50]">
+                    <h3 className="text-xl font-semibold text-white glow-text">
                       {exp.role}
                     </h3>
                     <p className="text-[#3498DB] font-medium">{exp.company}</p>
-                    <p className="text-sm text-[#34495E] mt-1">{exp.period}</p>
-                    <p className="text-[#34495E] mt-2">{exp.description}</p>
+                    <p className="text-sm text-white/60 mt-1">{exp.period}</p>
+                    <p className="text-white/80 mt-2">{exp.description}</p>
                   </div>
                 </CardContent>
               </Card>
