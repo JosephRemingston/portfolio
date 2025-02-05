@@ -12,10 +12,10 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold text-[#2C3E50] mb-4">
-            Hi, I'm Sarah
+            Hi, I'm Joseph Remingston
           </h1>
           <p className="text-xl text-[#34495E] mb-8">
-            A passionate full-stack developer crafting beautiful and functional web experiences
+            A dedicated Web3 and Backend Developer with a passion for crafting innovative and impactful digital solutions, specializing in blockchain technology and full-stack systems.
           </p>
           <Button
             onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
@@ -32,7 +32,7 @@ export default function Hero() {
           className="relative aspect-square"
         >
           <img
-            src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2"
+            src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa"
             alt="Profile"
             className="rounded-full object-cover shadow-xl"
           />
