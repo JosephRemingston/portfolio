@@ -1,28 +1,15 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { SiGoogle, SiMeta, SiAmazon } from "react-icons/si";
+import { BiCircle } from "react-icons/bi";
+
 
 const experiences = [
   {
-    company: "Google",
-    role: "Senior Software Engineer",
-    period: "2020 - Present",
-    description: "Led development of cloud-based solutions and internal tools",
-    icon: SiGoogle
-  },
-  {
-    company: "Meta",
-    role: "Software Engineer",
-    period: "2018 - 2020",
-    description: "Worked on scalable web applications and developer tools",
-    icon: SiMeta
-  },
-  {
-    company: "Amazon",
-    role: "Junior Developer",
-    period: "2016 - 2018",
-    description: "Developed and maintained e-commerce platforms",
-    icon: SiAmazon
+    company: "OnlyClick",
+    role: "Backend Intern",
+    period: "2024 - Present",
+    description: "Developed the backend from scratch, designing and implementing scalable architectures, optimizing database performance, and ensuring seamless API integrations.",
+    icon: BiCircle
   }
 ];
 

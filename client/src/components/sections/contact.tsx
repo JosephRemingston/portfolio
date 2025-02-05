@@ -58,7 +58,7 @@ export default function Contact() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-bold text-[#2C3E50] mb-8">Contact Me</h2>
+        <h2 className="section-heading">Contact Me</h2>
         
         <Card>
           <CardContent className="p-6">
