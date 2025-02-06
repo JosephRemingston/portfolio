@@ -14,6 +14,10 @@ export default function About() {
     {
       category: "Database & DevOps",
       items: ["PostgreSQL", "MongoDB", "MySQL", "Docker", "AWS", "Git"]
+    },
+    {
+      category : "Languages",
+      items : ["Java" , "Python" , "JavaScript" , "C" , "C++"]
     }
   ];
 
