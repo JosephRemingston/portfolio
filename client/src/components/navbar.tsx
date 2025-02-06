@@ -8,6 +8,7 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
+  {name : "Certifications" , href : "#certifications"},
   { name: "Stats", href: "#stats" },
   { name: "Contact", href: "#contact" },
 ];
@@ -46,7 +47,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.95 }}
           className="text-2xl font-bold text-white relative"
         >
-          <span className="relative z-10">Portfolio</span>
+          <span className="relative z-10">Joseph Remingston</span>
           <motion.div
             className="absolute inset-0 bg-blue-500/20 rounded-lg -z-10"
             whileHover={{ scale: 1.2, opacity: 0.8 }}

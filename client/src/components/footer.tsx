@@ -6,17 +6,17 @@ export default function Footer() {
     {
       name: "GitHub",
       icon: SiGithub,
-      href: "https://github.com/JosephRemingston",
+      href: "www.github.com/JosephRemingston",
     },
     {
       name: "LinkedIn",
       icon: SiLinkedin,
-      href: "https://linkedin.com/in/joseph-remingston", // Update with actual LinkedIn URL
+      href: "www.linkedin.com/in/joseph-remingston-8b6105259/", // Update with actual LinkedIn URL
     },
     {
       name: "Instagram",
       icon: SiInstagram,
-      href: "https://instagram.com/joseph.remingston", // Update with actual Instagram URL
+      href: "www.instagram.com/gorgeousgamer7781", // Update with actual Instagram URL
     },
   ];
 

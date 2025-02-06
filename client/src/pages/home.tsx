@@ -7,6 +7,7 @@ import Experience from "@/components/sections/experience";
 import Stats from "@/components/sections/stats";
 import Contact from "@/components/sections/contact";
 import Footer from "@/components/footer";
+import Certifications from "@/components/sections/certifications";
 
 const BackgroundAnimation = () => (
   <div className="fixed inset-0 -z-10">
@@ -31,6 +32,7 @@ export default function Home() {
         <About />
         <Projects />
         <Experience />
+        <Certifications/>
         <Stats />
         <Contact />
       </motion.main>
