@@ -23,7 +23,7 @@ export default function Stats() {
               </div>
               <div className="space-y-4">
                 <img
-                  src="https://github-readme-stats.vercel.app/api?username=JosephRemingston&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117"
+                  src="https://github-readme-stats.vercel.app/api?username=JosephRemingston&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117"
                   alt="GitHub Stats"
                   className="w-full"
                 />
