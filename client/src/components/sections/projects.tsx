@@ -5,11 +5,11 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management",
-    image: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8",
-    github: "https://github.com",
-    demo: "https://demo.com"
+    title: "Serverless Media Processing Platform",
+    description: "A cloud-native, serverless media processing platform that allows users to seamlessly upload, process, and manage images with real-time AI analysis.",
+    image: "https://serverjoseph.s3.ap-southeast-1.amazonaws.com/ChatGPT+Image+Jul+22%2C+2025%2C+02_10_18+PM.png",
+    github: "https://github.com/JosephRemingston/serverless-image-processing",
+    demo: "https://serverless-image-processing-fronten.vercel.app/"
   },
   {
     title: "Project Management Tool",
@@ -52,7 +52,7 @@ export default function Projects() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full object-contain max-h-80 transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </motion.div>
