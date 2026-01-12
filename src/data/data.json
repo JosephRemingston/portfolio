@@ -5,18 +5,17 @@
   "profile": {
     "name": "Joseph Remingston",
     "handle": "JosephRemingston",
-    "avatar": "https://imgs.search.brave.com/llxNE6-IlXfe7sZMwozzEt1J3aKGPAZLcfWDMr3L8Vc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNDE5/NTQwNC5qcGc",
-    "banner": "./public/assets/jonatan-pie-3l3RwQdHRHg-unsplash (1).jpg",
+    "avatar": "./public/Gemini_Generated_Image_vbw74uvbw74uvbw7.png",
+    "banner": "https://wallpapercave.com/wp/wp12782240.jpg",
     "bio": "A Software Engineer focused on building high-performance microservices, cloud-native architectures, and robust API infrastructure that powers next-gen AI applications.",
     "location": "Bengaluru, Karnataka",
-    "resumeUrl": "/Joseph_Remingston_Resume.pdf",
+    "resumeUrl": "https://drive.google.com/file/d/10sfg6V45whebGd-7oq5sNGgy-IW2LlfW/view?usp=sharing",
     "email": "ljremi@gmail.com"
   },
   "roles": [
     "Backend Engineer",
     "GenAI Engineer",
     "Full Stack Developer",
-    "AI/ML Engineer",
     "Software Developer"
   ],
   "socials": [
@@ -50,17 +49,17 @@
     },
     {
       "name": "Java",
-      "icon": "coffee",
+      "icon": "code",
       "color": "#007396"
     },
     {
       "name": "AWS",
-      "icon": "cloud",
+      "icon": "globe",
       "color": "#FF9900"
     },
     {
       "name": "Docker",
-      "icon": "box",
+      "icon": "server",
       "color": "#2496ED"
     },
     {
@@ -80,7 +79,7 @@
     },
     {
       "name": "REST APIs",
-      "icon": "link",
+      "icon": "globe",
       "color": "#009688"
     },
     {
@@ -95,12 +94,12 @@
     },
     {
       "name": "LangChain",
-      "icon": "link",
+      "icon": "zap",
       "color": "#06B6D4"
     },
     {
       "name": "Git",
-      "icon": "git-branch",
+      "icon": "terminal",
       "color": "#F05032"
     }
   ],
@@ -148,8 +147,8 @@
         "Serverless",
         "AI"
       ],
-      "github": "https://github.com/JosephRemingston",
-      "demo": null,
+      "github": "https://github.com/JosephRemingston/serverless_image_processing",
+      "demo": "https://serverless-image-processing-fronten-ten.vercel.app/",
       "featured": true
     },
     {
@@ -166,8 +165,26 @@
         "Gemini API",
         "ChromaDB"
       ],
-      "github": "https://github.com/JosephRemingston",
-      "demo": null,
+      "github": "https://github.com/JosephRemingston/Mini-PDF-Q-A-App",
+      "demo": "https://mini-pdf-q-a-app.vercel.app//",
+      "featured": true
+    },
+    {
+      "id": "3",
+      "title": "GreenMind AI - GenAI based Farmer Assistant",
+      "slug": "greenmind-ai",
+      "description": "Architected and deployed a domain-adapted GenAI chatbot with a farming-specific knowledge base to minimize model hallucinations. Implemented a RAG pipeline using LangChain, ChromaDB, and Gemini embeddings for contextual responses.",
+      "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800",
+      "tags": [
+        "Node.js",
+        "LangChain",
+        "ChromaDB",
+        "RAG Pipelines",
+        "AWS Lambda",
+        "Gemini"
+      ],
+      "github": "https://github.com/JosephRemingston/VivasayiAI",
+      "demo": "https://vivasayiai.vercel.app",
       "featured": true
     }
   ],

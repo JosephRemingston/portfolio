@@ -36,7 +36,7 @@ function PortfolioContent({ data }: PortfolioProps) {
         </motion.section>
 
         <GitHubChart username={data.github} />
-        <SpotifyWidget />
+        {/* <SpotifyWidget /> */}
         <Experience experiences={data.experience} />
         <Education education={data.education} />
         <Projects projects={data.projects} />
