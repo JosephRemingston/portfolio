@@ -1,257 +1,221 @@
 {
-  "theme": "monochrome",
-  "github": "torvalds",
-  "illustration": true,
+  "theme": "forest",
+  "github": "JosephRemingston",
+  "illustration": false,
   "profile": {
-    "name": "Lelouch vi Britannia",
-    "handle": "zero",
+    "name": "Joseph Remingston",
+    "handle": "JosephRemingston",
     "avatar": "https://imgs.search.brave.com/llxNE6-IlXfe7sZMwozzEt1J3aKGPAZLcfWDMr3L8Vc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNDE5/NTQwNC5qcGc",
-    "banner": "https://wallpapercave.com/wp/wp2883490.jpg",
-    "bio": "Revolutionary strategist and tactical genius. Wielder of the Power of Absolute Obedience. Fighting for a world where the weak are not oppressed.",
-    "location": "Area 11 (Japan)",
-    "resumeUrl": "#",
-    "email": "zero@blackknights.org"
+    "banner": "./public/assets/jonatan-pie-3l3RwQdHRHg-unsplash (1).jpg",
+    "bio": "A Software Engineer focused on building high-performance microservices, cloud-native architectures, and robust API infrastructure that powers next-gen AI applications.",
+    "location": "Bengaluru, Karnataka",
+    "resumeUrl": "/Joseph_Remingston_Resume.pdf",
+    "email": "ljremi@gmail.com"
   },
   "roles": [
-    "Master Strategist",
-    "Revolutionary Leader",
-    "Knightmare Pilot",
-    "Chess Grandmaster",
-    "Geass User"
+    "Backend Engineer",
+    "GenAI Engineer",
+    "Full Stack Developer",
+    "AI/ML Engineer",
+    "Software Developer"
   ],
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/zero",
+      "url": "https://github.com/JosephRemingston",
       "icon": "github"
     },
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/zero",
-      "icon": "twitter"
-    },
+
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/zero",
+      "url": "https://linkedin.com/in/joseph-remingston",
       "icon": "linkedin"
     }
   ],
   "skills": [
     {
-      "name": "Strategic Planning",
+      "name": "Python",
+      "icon": "code",
+      "color": "#3776AB"
+    },
+    {
+      "name": "Node.js",
+      "icon": "server",
+      "color": "#339933"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "code",
+      "color": "#F7DF1E"
+    },
+    {
+      "name": "Java",
+      "icon": "coffee",
+      "color": "#007396"
+    },
+    {
+      "name": "AWS",
+      "icon": "cloud",
+      "color": "#FF9900"
+    },
+    {
+      "name": "Docker",
+      "icon": "box",
+      "color": "#2496ED"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "database",
+      "color": "#47A248"
+    },
+    {
+      "name": "SQL",
+      "icon": "database",
+      "color": "#4479A1"
+    },
+    {
+      "name": "Express.js",
+      "icon": "server",
+      "color": "#000000"
+    },
+    {
+      "name": "REST APIs",
+      "icon": "link",
+      "color": "#009688"
+    },
+    {
+      "name": "RAG Pipelines",
       "icon": "brain",
       "color": "#8B5CF6"
     },
     {
-      "name": "Tactical Analysis",
-      "icon": "target",
-      "color": "#EF4444"
+      "name": "Vector Databases",
+      "icon": "database",
+      "color": "#DC2626"
     },
     {
-      "name": "Leadership",
-      "icon": "crown",
-      "color": "#F59E0B"
-    },
-    {
-      "name": "Chess",
-      "icon": "trophy",
-      "color": "#10B981"
-    },
-    {
-      "name": "Knightmare Piloting",
-      "icon": "gamepad",
-      "color": "#3B82F6"
-    },
-    {
-      "name": "Manipulation",
-      "icon": "message",
-      "color": "#EC4899"
-    },
-    {
-      "name": "Public Speaking",
-      "icon": "mic",
+      "name": "LangChain",
+      "icon": "link",
       "color": "#06B6D4"
     },
     {
-      "name": "Geass Control",
-      "icon": "eye",
-      "color": "#DC2626"
+      "name": "Git",
+      "icon": "git-branch",
+      "color": "#F05032"
     }
   ],
   "experience": [
     {
-      "company": "Black Knights",
-      "role": "Supreme Commander (Zero)",
-      "type": "Leadership",
-      "period": "2017 - 2018 a.t.b.",
-      "location": "Japan / Global",
+      "company": "Icurious AI",
+      "role": "Tech Intern",
+      "type": "Internship",
+      "period": "Oct 2025 - Dec 2025",
+      "location": "India",
       "details": [
-        "Founded and led the Black Knights resistance organization against Britannian Empire",
-        "Orchestrated the liberation of Japan through strategic military operations",
-        "Unified resistance groups across the globe under a single command structure",
-        "Achieved chairman position of the United Federation of Nations"
-      ]
-    },
-    {
-      "company": "Holy Britannian Empire",
-      "role": "99th Emperor",
-      "type": "Monarchy",
-      "period": "2018 a.t.b.",
-      "location": "Pendragon",
-      "details": [
-        "Seized the throne through strategic manipulation and Geass",
-        "Implemented sweeping reforms to dismantle the aristocracy",
-        "Executed the Zero Requiem plan to bring world peace",
-        "United the world against a common enemy to end conflict"
-      ]
-    },
-    {
-      "company": "Ashford Academy",
-      "role": "Student Council Vice President",
-      "type": "Education",
-      "period": "2016 - 2018 a.t.b.",
-      "location": "Tokyo Settlement",
-      "details": [
-        "Maintained perfect academic standing while leading a double life",
-        "Organized school festivals and cultural events",
-        "Protected the identity of exiled royalty while attending classes"
+        "Conducted in-depth research on the MathDial dataset to improve conversational reasoning in AI models for mathematical problem-solving and educational use cases",
+        "Analyzed dataset structure, pedagogical dialogue acts, and data utilization strategies to enhance model training and response quality",
+        "Created a pull request to integrate speech-to-text (STT) functionality using WebSockets with the OpenAI API for real-time speech input processing",
+        "Researched WebSocket-based streaming and OpenAI's real-time API capabilities to implement a scalable, low-latency audio transcription approach",
+        "Explored best practices for integrating Generative AI techniques, including prompt engineering strategies and model interaction patterns",
+        "Documented and shared research findings on architectural approaches to improve response accuracy, reliability, and user experience"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Ashford Academy",
-      "degree": "High School Diploma",
-      "field": "General Studies",
-      "period": "2015 - 2018 a.t.b.",
-      "location": "Tokyo Settlement, Area 11",
-      "grade": "Valedictorian",
+      "institution": "VIT-AP University",
+      "degree": "B.Tech in Computer Science",
+      "field": "Artificial Intelligence and Machine Learning",
+      "period": "2023 - 2027",
+      "location": "Amaravati, Andhra Pradesh",
       "details": [
-        "Top academic performer across all subjects",
-        "Vice President of the Student Council",
-        "Champion of the school chess club"
-      ]
-    },
-    {
-      "institution": "Imperial Britannian Military Academy",
-      "degree": "Strategic Command Certification",
-      "field": "Military Strategy",
-      "period": "2010 - 2012 a.t.b.",
-      "location": "Pendragon, Britannia",
-      "details": [
-        "Trained in advanced tactical warfare and command structure",
-        "Studied Knightmare Frame combat theory",
-        "Excelled in psychological warfare techniques"
+        "Specialization in Artificial Intelligence and Machine Learning"
       ]
     }
   ],
   "projects": [
     {
       "id": "1",
-      "title": "Zero Requiem",
-      "slug": "zero-requiem",
-      "description": "The ultimate plan to end all conflict by uniting the world against a common enemy, achieving lasting peace through sacrifice.",
-      "image": "https://wallpapercave.com/wp/4FBo5yQ.jpg",
+      "title": "VisionAI - AI Based Media Analysis",
+      "slug": "visionai",
+      "description": "Built a serverless image processing pipeline with AI-powered analysis via AWS Rekognition, automating object detection and reducing manual tagging effort. Achieved 99.9% uptime with Lambda deployment.",
+      "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
       "tags": [
-        "Strategy",
-        "Peace",
-        "Sacrifice"
+        "Node.js",
+        "AWS",
+        "MongoDB",
+        "Express.js",
+        "Serverless",
+        "AI"
       ],
-      "github": null,
+      "github": "https://github.com/JosephRemingston",
       "demo": null,
       "featured": true
     },
     {
       "id": "2",
-      "title": "Black Knights Formation",
-      "slug": "black-knights",
-      "description": "Created a revolutionary military organization from scattered resistance groups, becoming the world's most powerful independent army.",
-      "image": "https://wallpapercave.com/wp/wp2883518.jpg",
+      "title": "DocuQuery - RAG based PDF Insights",
+      "slug": "docuquery",
+      "description": "Designed and implemented a RAG-based PDF retrieval system with Node.js backend, enabling efficient semantic search and context-aware answers. Optimized LLM response pipeline with ChromaDB embeddings, improving query throughput by 40%.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
       "tags": [
-        "Leadership",
-        "Military",
-        "Revolution"
+        "Node.js",
+        "RAG",
+        "MongoDB",
+        "LangChain",
+        "Gemini API",
+        "ChromaDB"
       ],
-      "github": null,
-      "demo": null,
-      "featured": true
-    },
-    {
-      "id": "3",
-      "title": "United Federation of Nations",
-      "slug": "ufn",
-      "description": "Diplomatic achievement uniting 47 nations against the Britannian Empire, establishing a democratic world order.",
-      "image": "https://wallpapercave.com/wp/yO2TljR.jpg",
-      "tags": [
-        "Diplomacy",
-        "Politics",
-        "Unity"
-      ],
-      "github": null,
-      "demo": null,
-      "featured": true
-    },
-    {
-      "id": "4",
-      "title": "Geass Strategic Applications",
-      "slug": "geass-strategy",
-      "description": "Mastered the Power of Absolute Obedience, developing tactical frameworks for its ethical and strategic deployment.",
-      "image": "https://wallpapercave.com/wp/wp2883490.jpg",
-      "tags": [
-        "Geass",
-        "Power",
-        "Control"
-      ],
-      "github": null,
+      "github": "https://github.com/JosephRemingston",
       "demo": null,
       "featured": true
     }
   ],
   "blogs": [
     {
-      "slug": "the-power-of-geass",
-      "title": "The Power of Geass: Understanding Absolute Obedience",
-      "date": "2018-03-15",
-      "excerpt": "An exploration of the Geass power, its origins from C.C., and the ethical implications of commanding absolute obedience.",
+      "slug": "rag-pipelines-explained",
+      "title": "Building RAG Pipelines: A Practical Guide",
+      "date": "2025-12-15",
+      "excerpt": "Learn how to build efficient Retrieval-Augmented Generation pipelines for AI applications using vector databases and embeddings.",
       "tags": [
-        "Geass",
-        "Philosophy",
-        "Power"
+        "RAG",
+        "AI",
+        "LangChain"
       ],
-      "coverImage": "https://wallpapercave.com/wp/wp2883497.jpg",
-      "readingTime": "5 min"
-    },
-    {
-      "slug": "strategic-warfare",
-      "title": "Strategic Warfare: Lessons from the Black Rebellion",
-      "date": "2018-02-20",
-      "excerpt": "Breaking down the tactical decisions that led to the success of the Black Rebellion and the liberation of Japan.",
-      "tags": [
-        "Strategy",
-        "Military",
-        "Tactics"
-      ],
-      "coverImage": "https://wallpapercave.com/wp/wp2883502.jpg",
+      "coverImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
       "readingTime": "8 min"
     },
     {
-      "slug": "chess-and-war",
-      "title": "Chess and War: The Art of Sacrifice",
-      "date": "2018-01-10",
-      "excerpt": "How the principles of chess apply to real-world strategy, and why sometimes the king must lead from the front.",
+      "slug": "serverless-aws-architecture",
+      "title": "Serverless Architecture with AWS Lambda",
+      "date": "2025-11-20",
+      "excerpt": "Best practices for building scalable serverless applications using AWS Lambda, API Gateway, and other AWS services.",
       "tags": [
-        "Chess",
-        "Leadership",
-        "Philosophy"
+        "AWS",
+        "Serverless",
+        "Backend"
       ],
-      "coverImage": "https://wallpapercave.com/wp/wp2883510.jpg",
+      "coverImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
       "readingTime": "6 min"
+    },
+    {
+      "slug": "vector-databases-ai",
+      "title": "Vector Databases for AI Applications",
+      "date": "2025-10-10",
+      "excerpt": "Understanding vector databases and how they power semantic search and AI-driven applications.",
+      "tags": [
+        "Vector DB",
+        "AI",
+        "Machine Learning"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1639322537228-f710d846310a?w=800",
+      "readingTime": "7 min"
     }
   ],
   "quotes": [
-    "The only ones who should kill are those who are prepared to be killed.",
-    "If the king doesn't move, then his subjects won't follow.",
-    "What do you do when there is an evil you cannot defeat by just means?",
-    "I will not repent. This is my path, and I will walk it to the end."
+    "Code is like humor. When you have to explain it, it's bad.",
+    "First, solve the problem. Then, write the code.",
+    "The best error message is the one that never shows up.",
+    "Simplicity is the soul of efficiency."
   ]
 }

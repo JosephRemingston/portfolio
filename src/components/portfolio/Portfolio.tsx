@@ -40,7 +40,7 @@ function PortfolioContent({ data }: PortfolioProps) {
         <Experience experiences={data.experience} />
         <Education education={data.education} />
         <Projects projects={data.projects} />
-        <Blog blogs={data.blogs} />
+        {/* <Blog blogs={data.blogs} /> */}
         <Footer quotes={data.quotes} handle={data.profile.handle} />
       </motion.div>
 
