@@ -5,7 +5,7 @@
   "profile": {
     "name": "Joseph Remingston",
     "handle": "JosephRemingston",
-    "avatar": "./public/assets/Gemini_Generated_Image_vbw74uvbw74uvbw7.png",
+    "avatar": "/assets/Gemini_Generated_Image_vbw74uvbw74uvbw7.png",
     "banner": "https://wallpapercave.com/wp/wp12782240.jpg",
     "bio": "A Software Engineer focused on building high-performance microservices, cloud-native architectures, and robust API infrastructure that powers next-gen AI applications.",
     "location": "Bengaluru, Karnataka",
