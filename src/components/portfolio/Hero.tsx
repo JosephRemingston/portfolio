@@ -28,7 +28,7 @@ export default function Hero({ profile, roles, socials }: HeroProps) {
     <>
       <motion.div variants={ANIMATION.fadeIn} className="relative mb-6">
         <div className="relative overflow-hidden rounded-2xl h-32 sm:h-40">
-          <img src={profile.banner} alt="Banner" className="w-full h-full object-cover" />
+          <img src={profile.banner} alt="Banner" className="w-full h-full object-cover" loading="eager" decoding="async" />
           <button
             onClick={(e) => setMode(mode === "dark" ? "light" : "dark", e)}
             className="absolute top-3 right-3 p-2 rounded-lg transition-colors backdrop-blur-sm hover:bg-white/30 cursor-pointer"
@@ -46,7 +46,14 @@ export default function Hero({ profile, roles, socials }: HeroProps) {
             className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-4 shadow-xl"
             style={{ borderColor: colors.background, backgroundColor: colors.background }}
           >
-            <img src={profile.avatar} alt={profile.name} className="w-full h-full object-cover" />
+            <img 
+              src={profile.avatar} 
+              alt={profile.name} 
+              className="w-full h-full object-cover" 
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
           </motion.div>
         </div>
       </motion.div>
