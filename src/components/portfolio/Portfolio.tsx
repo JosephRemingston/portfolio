@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ThemeProvider, useTheme } from "../../context/ThemeContext";
 import { ANIMATION } from "../../lib/constants";
-import { Hero, Experience, Education, Projects, SkillSlider, Blog, Footer, GitHubChart, SpotifyWidget, IllustrationOverlay } from "./index";
+import { Hero, Experience, Education, Projects, SkillSlider, Blog, Footer, GitHubChart, SpotifyWidget, IllustrationOverlay, ResumeChat } from "./index";
 import type { PortfolioData } from "../../types/portfolio";
 
 interface PortfolioProps {
@@ -45,6 +45,7 @@ function PortfolioContent({ data }: PortfolioProps) {
       </motion.div>
 
       {data.illustration && <IllustrationOverlay />}
+      <ResumeChat />
     </div>
   );
 }
