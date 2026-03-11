@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-read index.ts"
+  },
+  "imports": {
+    "chromadb": "npm:chromadb@1.8.1",
+    "@google/generative-ai": "npm:@google/generative-ai@0.21.0"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window", "dom"],
+    "strict": true
+  }
+}
