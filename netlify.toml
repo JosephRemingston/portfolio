@@ -1,6 +1,6 @@
 [build]
   # Build command
-  command = "npm build"
+  command = "pnpm build"
   
   # Directory to deploy (usually 'dist' for Vite projects)
   publish = "dist"
