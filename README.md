@@ -268,13 +268,6 @@ Set to `false` before deploying to production.
 
 ## Deployment
 
-### Vercel
-
-```bash
-npm run build
-vercel deploy
-```
-
 ### Netlify
 
 ```bash
