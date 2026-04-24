@@ -1,9 +1,0 @@
-# Supabase
-.branches
-.temp
-.env
-.env.local
-
-# OS
-.DS_Store
-*.log

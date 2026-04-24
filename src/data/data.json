@@ -9,7 +9,7 @@
     "banner": "https://wallpapercave.com/wp/wp12782240.jpg",
     "bio": "A Software Engineer focused on building high-performance microservices, cloud-native architectures, and robust API infrastructure that powers next-gen AI applications.",
     "location": "Bengaluru, Karnataka",
-    "resumeUrl": "https://drive.google.com/file/d/1X4smy-wY-DFPjBQIp3tTYpamW5dhXuH8/view?usp=sharing",
+    "resumeUrl": "https://drive.google.com/file/d/1U92TLP0g5l9bgmc9CbKP4HRjdB4_ennR/view?usp=sharing",
     "email": "ljremi@gmail.com"
   },
   "roles": [
@@ -203,6 +203,24 @@
       ],
       "github": "https://github.com/JosephRemingston/InsightAI",
       "demo" : "https://insightai-frontend-lilac.vercel.app/",
+      "featured": true
+    },
+    {
+      "id": "5",
+      "title": "ThrottleX - Multi-Tenant Configuration and Canary Deployment Platform",
+      "slug": "throttlex",
+      "description": "Built a production-ready multi-tenant configuration and canary deployment platform with JWT authentication, Redis-backed refresh tokens, health-based rollback, structured JSON logging, and Dockerized deployment workflows.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+      "tags": [
+        "Express 5",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "Jest",
+        "AWS SES"
+      ],
+      "github": "https://github.com/JosephRemingston/ThrottleX",
+      "demo": null,
       "featured": true
     }
   ],
