@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { ThemeProvider, useTheme } from "../../context/ThemeContext";
 import { ANIMATION } from "../../lib/constants";
-import { Hero, Experience, Education, Projects, SkillSlider, Footer, GitHubChart, IllustrationOverlay, ResumeChat, Contact } from "./index";
+import { Hero, Experience, Education, Projects, SkillSlider, Footer, GitHubChart, IllustrationOverlay, ResumeChat, Contact, BlogSection } from "./index";
+import BlogDetailModal from "../blog/BlogDetailModal";
 import type { PortfolioData } from "../../types/portfolio";
+import type { Blog } from "../../types/blog";
 
 interface PortfolioProps {
   data: PortfolioData;
@@ -10,6 +13,7 @@ interface PortfolioProps {
 
 function PortfolioContent({ data }: PortfolioProps) {
   const { colors } = useTheme();
+  const [selectedBlog, setSelectedBlog] = useState<Blog | null>(null);
 
   return (
     <div style={{ backgroundColor: colors.background, minHeight: "100vh" }}>
@@ -44,14 +48,22 @@ function PortfolioContent({ data }: PortfolioProps) {
 
         <Projects projects={data.projects} />
 
+        <BlogSection onSelectBlog={setSelectedBlog} />
+
         <Contact profile={data.profile} socials={data.socials} />
 
-        {/* <Blog blogs={data.blogs} /> */}
         <Footer quotes={data.quotes} handle={data.profile.handle} />
       </motion.div>
 
       {data.illustration && <IllustrationOverlay />}
       <ResumeChat />
+
+      {selectedBlog && (
+        <BlogDetailModal
+          blog={selectedBlog}
+          onClose={() => setSelectedBlog(null)}
+        />
+      )}
     </div>
   );
 }

@@ -1,6 +1,8 @@
-import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
+import { HeadContent, Scripts, createRootRoute, Outlet } from "@tanstack/react-router";
 import appCss from "../styles.css?url";
 import portfolioData from "../data/data.json";
+import { ThemeProvider } from "../context/ThemeContext";
+import { AuthProvider } from "../context/AuthContext";
 
 const { profile, roles } = portfolioData;
 const siteTitle = `${profile.name} | Portfolio`;
@@ -37,6 +39,7 @@ export const Route = createRootRoute({
     ],
   }),
   shellComponent: RootDocument,
+  component: RootComponent,
 });
 
 function RootDocument({ children }: { children: React.ReactNode }) {
@@ -47,5 +50,15 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>{children}<Scripts /></body>
     </html>
+  );
+}
+
+function RootComponent() {
+  return (
+    <AuthProvider>
+      <ThemeProvider>
+        <Outlet />
+      </ThemeProvider>
+    </AuthProvider>
   );
 }
