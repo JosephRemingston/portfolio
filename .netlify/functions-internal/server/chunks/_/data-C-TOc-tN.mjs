@@ -1,0 +1,267 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/data-C-TOc-tN.js
+var data_default = {
+	theme: "forest",
+	github: "JosephRemingston",
+	illustration: false,
+	profile: {
+		"name": "Joseph Remingston",
+		"handle": "JosephRemingston",
+		"avatar": "/assets/profile-avatar.jpg",
+		"banner": "/assets/jonatan-pie-3l3RwQdHRHg-unsplash (1).jpg",
+		"bio": "A Software Engineer focused on building high-performance microservices, cloud-native architectures, and robust API infrastructure that powers next-gen AI applications.",
+		"location": "Bengaluru, Karnataka",
+		"resumeUrl": "https://drive.google.com/file/d/1U92TLP0g5l9bgmc9CbKP4HRjdB4_ennR/view?usp=sharing",
+		"email": "ljremi@gmail.com"
+	},
+	roles: [
+		"Backend Engineer",
+		"GenAI Engineer",
+		"Full Stack Developer",
+		"Software Developer"
+	],
+	socials: [{
+		"name": "GitHub",
+		"url": "https://github.com/JosephRemingston",
+		"icon": "github"
+	}, {
+		"name": "LinkedIn",
+		"url": "https://linkedin.com/in/joseph-remingston",
+		"icon": "linkedin"
+	}],
+	skills: [
+		{
+			"name": "Python",
+			"icon": "code",
+			"color": "#3776AB"
+		},
+		{
+			"name": "Node.js",
+			"icon": "server",
+			"color": "#339933"
+		},
+		{
+			"name": "JavaScript",
+			"icon": "code",
+			"color": "#F7DF1E"
+		},
+		{
+			"name": "Java",
+			"icon": "code",
+			"color": "#007396"
+		},
+		{
+			"name": "AWS",
+			"icon": "globe",
+			"color": "#FF9900"
+		},
+		{
+			"name": "Docker",
+			"icon": "server",
+			"color": "#2496ED"
+		},
+		{
+			"name": "MongoDB",
+			"icon": "database",
+			"color": "#47A248"
+		},
+		{
+			"name": "SQL",
+			"icon": "database",
+			"color": "#4479A1"
+		},
+		{
+			"name": "Express.js",
+			"icon": "server",
+			"color": "#000000"
+		},
+		{
+			"name": "REST APIs",
+			"icon": "globe",
+			"color": "#009688"
+		},
+		{
+			"name": "RAG Pipelines",
+			"icon": "brain",
+			"color": "#8B5CF6"
+		},
+		{
+			"name": "Vector Databases",
+			"icon": "database",
+			"color": "#DC2626"
+		},
+		{
+			"name": "LangChain",
+			"icon": "zap",
+			"color": "#06B6D4"
+		},
+		{
+			"name": "Git",
+			"icon": "terminal",
+			"color": "#F05032"
+		}
+	],
+	experience: [{
+		"company": "Icurious AI",
+		"role": "Tech Intern",
+		"type": "Internship",
+		"period": "Oct 2025 - Dec 2025",
+		"location": "India",
+		"details": [
+			"Conducted in-depth research on the MathDial dataset to improve conversational reasoning in AI models for mathematical problem-solving and educational use cases",
+			"Analyzed dataset structure, pedagogical dialogue acts, and data utilization strategies to enhance model training and response quality",
+			"Created a pull request to integrate speech-to-text (STT) functionality using WebSockets with the OpenAI API for real-time speech input processing",
+			"Researched WebSocket-based streaming and OpenAI's real-time API capabilities to implement a scalable, low-latency audio transcription approach",
+			"Explored best practices for integrating Generative AI techniques, including prompt engineering strategies and model interaction patterns",
+			"Documented and shared research findings on architectural approaches to improve response accuracy, reliability, and user experience"
+		]
+	}],
+	education: [{
+		"institution": "VIT-AP University",
+		"degree": "B.Tech in Computer Science",
+		"field": "Artificial Intelligence and Machine Learning",
+		"period": "2023 - 2027",
+		"location": "Amaravati, Andhra Pradesh",
+		"details": ["Specialization in Artificial Intelligence and Machine Learning"]
+	}],
+	projects: [
+		{
+			"id": "1",
+			"title": "VisionAI - AI Based Media Analysis",
+			"slug": "visionai",
+			"description": "Built a serverless image processing pipeline with AI-powered analysis via AWS Rekognition, automating object detection and reducing manual tagging effort. Achieved 99.9% uptime with Lambda deployment.",
+			"image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+			"tags": [
+				"Node.js",
+				"AWS",
+				"MongoDB",
+				"Express.js",
+				"Serverless",
+				"AI"
+			],
+			"github": "https://github.com/JosephRemingston/serverless_image_processing",
+			"demo": "https://serverless-image-processing-fronten-ten.vercel.app/",
+			"featured": true
+		},
+		{
+			"id": "2",
+			"title": "DocuQuery - RAG based PDF Insights",
+			"slug": "docuquery",
+			"description": "Designed and implemented a RAG-based PDF retrieval system with Node.js backend, enabling efficient semantic search and context-aware answers. Optimized LLM response pipeline with ChromaDB embeddings, improving query throughput by 40%.",
+			"image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+			"tags": [
+				"Node.js",
+				"RAG",
+				"MongoDB",
+				"LangChain",
+				"Gemini API",
+				"ChromaDB"
+			],
+			"github": "https://github.com/JosephRemingston/Mini-PDF-Q-A-App",
+			"demo": "https://mini-pdf-q-a-app.vercel.app//",
+			"featured": true
+		},
+		{
+			"id": "3",
+			"title": "GreenMind AI - GenAI based Farmer Assistant",
+			"slug": "greenmind-ai",
+			"description": "Architected and deployed a domain-adapted GenAI chatbot with a farming-specific knowledge base to minimize model hallucinations. Implemented a RAG pipeline using LangChain, ChromaDB, and Gemini embeddings for contextual responses.",
+			"image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800",
+			"tags": [
+				"Node.js",
+				"LangChain",
+				"ChromaDB",
+				"RAG Pipelines",
+				"AWS Lambda",
+				"Gemini"
+			],
+			"github": "https://github.com/JosephRemingston/VivasayiAI",
+			"demo": "https://vivasayiai.vercel.app",
+			"featured": true
+		},
+		{
+			"id": "4",
+			"title": "InsightAI - AI-Powered Database Assistant",
+			"slug": "insightai",
+			"description": "Built a production-ready API combining JWT authentication, encrypted MongoDB connection management, and AI-powered natural language query generation using Google Gemini AI. Features query and inference modes with Redis caching for optimal performance.",
+			"image": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=800",
+			"tags": [
+				"Express.js",
+				"MongoDB",
+				"JWT",
+				"Redis",
+				"Gemini API",
+				"AI"
+			],
+			"github": "https://github.com/JosephRemingston/InsightAI",
+			"demo": "https://insightai-frontend-lilac.vercel.app/",
+			"featured": true
+		},
+		{
+			"id": "5",
+			"title": "ThrottleX - Multi-Tenant Configuration and Canary Deployment Platform",
+			"slug": "throttlex",
+			"description": "Built a production-ready multi-tenant configuration and canary deployment platform with JWT authentication, Redis-backed refresh tokens, health-based rollback, structured JSON logging, and Dockerized deployment workflows.",
+			"image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+			"tags": [
+				"Express 5",
+				"MongoDB",
+				"Redis",
+				"Docker",
+				"Jest",
+				"AWS SES"
+			],
+			"github": "https://github.com/JosephRemingston/ThrottleX",
+			"demo": null,
+			"featured": true
+		}
+	],
+	blogs: [
+		{
+			"slug": "rag-pipelines-explained",
+			"title": "Building RAG Pipelines: A Practical Guide",
+			"date": "2025-12-15",
+			"excerpt": "Learn how to build efficient Retrieval-Augmented Generation pipelines for AI applications using vector databases and embeddings.",
+			"tags": [
+				"RAG",
+				"AI",
+				"LangChain"
+			],
+			"coverImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+			"readingTime": "8 min"
+		},
+		{
+			"slug": "serverless-aws-architecture",
+			"title": "Serverless Architecture with AWS Lambda",
+			"date": "2025-11-20",
+			"excerpt": "Best practices for building scalable serverless applications using AWS Lambda, API Gateway, and other AWS services.",
+			"tags": [
+				"AWS",
+				"Serverless",
+				"Backend"
+			],
+			"coverImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
+			"readingTime": "6 min"
+		},
+		{
+			"slug": "vector-databases-ai",
+			"title": "Vector Databases for AI Applications",
+			"date": "2025-10-10",
+			"excerpt": "Understanding vector databases and how they power semantic search and AI-driven applications.",
+			"tags": [
+				"Vector DB",
+				"AI",
+				"Machine Learning"
+			],
+			"coverImage": "https://images.unsplash.com/photo-1639322537228-f710d846310a?w=800",
+			"readingTime": "7 min"
+		}
+	],
+	quotes: [
+		"Code is like humor. When you have to explain it, it's bad.",
+		"First, solve the problem. Then, write the code.",
+		"The best error message is the one that never shows up.",
+		"Simplicity is the soul of efficiency."
+	]
+};
+//#endregion
+export { data_default as t };

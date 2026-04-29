@@ -2,21 +2,12 @@
   # Build command
   command = "pnpm build"
   
-  # This project builds client assets into .output/public
-  publish = ".output/public"
-  
-  # Functions directory (if using serverless functions)
-  # functions = "netlify/functions"
+  # Nitro uses the Netlify preset in CI and writes public assets to dist
+  publish = "dist"
 
 [build.environment]
   # Node version
   NODE_VERSION = "20"
-
-# Redirect rules for SPA routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 # Headers for better performance and security
 [[headers]]
