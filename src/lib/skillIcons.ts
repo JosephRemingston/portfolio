@@ -41,17 +41,20 @@ import {
   Package,
   Layers,
   Layout,
-  Figma,
   Lightbulb,
   Rocket,
   Star,
   Heart,
   Swords,
   Crown,
-  type LucideIcon,
+  type LucideProps,
 } from "lucide-react";
+import type { ComponentType } from "react";
+import { FigmaIcon } from "../components/portfolio/BrandIcons";
 
-const iconMap: Record<string, LucideIcon> = {
+type IconComponent = ComponentType<LucideProps>;
+
+const iconMap: Record<string, IconComponent> = {
   brain: Brain,
   target: Target,
   users: Users,
@@ -94,7 +97,7 @@ const iconMap: Record<string, LucideIcon> = {
   package: Package,
   layers: Layers,
   layout: Layout,
-  figma: Figma,
+  figma: FigmaIcon,
   lightbulb: Lightbulb,
   rocket: Rocket,
   star: Star,
@@ -103,7 +106,7 @@ const iconMap: Record<string, LucideIcon> = {
   crown: Crown,
 };
 
-export function getSkillIcon(name: string): LucideIcon | null {
+export function getSkillIcon(name: string): IconComponent | null {
   return iconMap[name.toLowerCase()] || null;
 }
 

@@ -1,8 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Settings, X, Palette, BookOpen, Check, Sun, Moon, Github, Twitter, Music } from "lucide-react";
+import { Settings, X, Palette, BookOpen, Check, Sun, Moon, Music } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 import { THEME_PRESETS } from "../../lib/themes";
+import { GitHubIcon, XIcon } from "./BrandIcons";
 
 const FEATURES = [
   "6 built-in theme presets with light/dark modes",
@@ -229,7 +230,7 @@ export default function IllustrationOverlay() {
                       color: "white",
                     }}
                   >
-                    <Github className="w-4 h-4" />
+                    <GitHubIcon className="w-4 h-4" />
                     View on GitHub
                   </a>
                   <a
@@ -242,7 +243,7 @@ export default function IllustrationOverlay() {
                       color: colors.foreground,
                     }}
                   >
-                    <Twitter className="w-4 h-4" />
+                    <XIcon className="w-4 h-4" />
                     Follow @pixperk
                   </a>
                 </div>

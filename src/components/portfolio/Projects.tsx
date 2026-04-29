@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 import { ANIMATION } from "../../lib/constants";
 import { getSectionGradient, getGlowColor } from "../../lib/themes";
 import type { Project } from "../../types/portfolio";
+import { GitHubIcon } from "./BrandIcons";
 
 interface ProjectsProps {
   projects: Project[];
@@ -94,7 +95,7 @@ export default function Projects({ projects }: ProjectsProps) {
                       onMouseEnter={(e) => e.currentTarget.style.color = colors.primary}
                       onMouseLeave={(e) => e.currentTarget.style.color = `${colors.primary}80`}
                     >
-                      <Github className="w-4 h-4" />
+                      <GitHubIcon className="w-4 h-4" />
                     </a>
                   )}
                   {project.demo && (

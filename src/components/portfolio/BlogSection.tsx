@@ -60,7 +60,6 @@ export default function BlogSection({ onSelectBlog }: BlogSectionProps) {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, ease: 'easeOut', delay: index * 0.06 }}
-            transition={{ delay: index * 0.1 }}
           >
             <BlogCard
               blog={blog}
