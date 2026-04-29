@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Download, Mail, Calendar, Sun, Moon } from "lucide-react";
+import { Download, Calendar, Sun, Moon } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 import { ANIMATION } from "../../lib/constants";
 import { getGradient } from "../../lib/themes";
@@ -129,32 +129,11 @@ export default function Hero({ profile, roles, socials }: HeroProps) {
             <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 relative z-10" />
             <span className="relative z-10">Let's talk</span>
           </motion.a>
-          <motion.a
-            href={`mailto:${profile.email}`}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-medium border-2 transition-all duration-300 cursor-pointer"
-            style={{
-              borderColor: mode === "dark" ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.1)",
-              color: colors.foreground,
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = mode === "dark" ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.05)";
-              e.currentTarget.style.borderColor = mode === "dark" ? "rgba(255,255,255,0.3)" : "rgba(0,0,0,0.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "transparent";
-              e.currentTarget.style.borderColor = mode === "dark" ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.1)";
-            }}
-          >
-            <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-            Drop a mail
-          </motion.a>
         </div>
 
         <div>
           <p className="text-xs sm:text-sm mb-2 sm:mb-3" style={{ color: `${colors.foreground}99` }}>
-            Find me on the <span style={{ color: colors.foreground }} className="font-medium">internet</span>
+            Find me on
           </p>
           <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {socials.map((social) => (

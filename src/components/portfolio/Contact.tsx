@@ -25,7 +25,7 @@ export default function Contact({ profile, socials }: ContactProps) {
             Contact
           </h2>
           <p className="text-xs sm:text-sm" style={{ color: `${colors.foreground}99` }}>
-            Reach out directly
+            Reach me at
           </p>
         </div>
 

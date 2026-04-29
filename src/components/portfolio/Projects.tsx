@@ -13,6 +13,11 @@ interface ProjectsProps {
 export default function Projects({ projects }: ProjectsProps) {
   const { colors, mode } = useTheme();
 
+  const openProjectLink = (href?: string) => {
+    if (!href) return;
+    window.open(href, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <motion.section
       variants={ANIMATION.fadeIn}
@@ -45,16 +50,23 @@ export default function Projects({ projects }: ProjectsProps) {
           viewport={{ once: true, margin: "-50px" }}
         >
           {projects.filter(p => p.featured).map((project) => (
-            <motion.a
+            <motion.article
               key={project.id}
-              href={project.github || "#"}
-              target={project.github ? "_blank" : "_self"}
-              rel={project.github ? "noopener noreferrer" : ""}
               variants={ANIMATION.cardItem}
               whileHover={{ borderColor: colors.primary }}
               whileTap={{ scale: 0.98 }}
               transition={ANIMATION.spring}
               className="group flex flex-col p-4 sm:p-5 rounded-lg border cursor-pointer transition-colors"
+              role={project.github ? "link" : undefined}
+              tabIndex={project.github ? 0 : undefined}
+              onClick={() => openProjectLink(project.github)}
+              onKeyDown={(e) => {
+                if (!project.github) return;
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openProjectLink(project.github);
+                }
+              }}
               style={{
                 backgroundColor: mode === "dark" ? "rgba(255,255,255,0.02)" : "rgba(255,255,255,0.5)",
                 borderColor: mode === "dark" ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.08)",
@@ -114,7 +126,7 @@ export default function Projects({ projects }: ProjectsProps) {
                   )}
                 </div>
               </div>
-            </motion.a>
+            </motion.article>
           ))}
         </motion.div>
       </div>
