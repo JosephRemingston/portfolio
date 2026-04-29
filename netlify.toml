@@ -2,8 +2,8 @@
   # Build command
   command = "pnpm build"
   
-  # Directory to deploy (usually 'dist' for Vite projects)
-  publish = "dist"
+  # This project builds client assets into .output/public
+  publish = ".output/public"
   
   # Functions directory (if using serverless functions)
   # functions = "netlify/functions"
