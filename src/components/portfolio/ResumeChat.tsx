@@ -44,7 +44,10 @@ export function ResumeChat() {
     setLoading(true);
 
     try {
-      const result = await ragClient.query(trimmed);
+      const recentHistory = messages.slice(-6);
+      const result = await ragClient.query(trimmed, {
+        chatHistory: recentHistory,
+      });
       const reply = result.success
         ? result.answer || "I couldn't find a specific answer for that."
         : result.error || "Something went wrong. Please try again.";

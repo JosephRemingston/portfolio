@@ -2,14 +2,17 @@
 
 export interface ResumeRAGQueryRequest {
   query: string;
-  n_results?: number;
+  chatHistory?: Array<{
+    role: "user" | "assistant";
+    content: string;
+  }>;
 }
 
 export interface ResumeRAGResult {
   id: string;
   content: string;
   metadata: Record<string, any>;
-  similarity: number;
+  score?: number;
 }
 
 export interface ResumeRAGQueryResponse {
@@ -30,7 +33,12 @@ export class ResumeRAGClient {
 
   async query(
     query: string,
-    nResults: number = 5
+    options: {
+      chatHistory?: Array<{
+        role: "user" | "assistant";
+        content: string;
+      }>;
+    } = {}
   ): Promise<ResumeRAGQueryResponse> {
     try {
       const response = await fetch(
@@ -43,7 +51,7 @@ export class ResumeRAGClient {
           },
           body: JSON.stringify({
             query,
-            n_results: nResults,
+            chatHistory: options.chatHistory,
           }),
         }
       );
