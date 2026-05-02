@@ -23,7 +23,6 @@ declare global {
 }
 
 const TURNSTILE_TEST_SITE_KEY = "1x00000000000000000000AA";
-const NETLIFY_FORM_NAME = "contact";
 
 function getEmailError(email: string): string | null {
   const normalizedEmail = email.trim();
@@ -75,6 +74,11 @@ interface FormData {
   subject: string;
   message: string;
   companyWebsite: string;
+}
+
+interface ContactSendResponse {
+  success: boolean;
+  error?: string;
 }
 
 export default function ContactForm() {
@@ -252,26 +256,50 @@ export default function ContactForm() {
     setErrors((prev) => ({ ...prev, form: "", turnstile: "" }));
 
     try {
-      const response = await fetch("/", {
+      const backendUrl = import.meta.env.BACKEND_URL;
+      if (!backendUrl) {
+        throw new Error("Backend URL is not configured");
+      }
+
+      const response = await fetch(`${backendUrl}/functions/v1/contactForm`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "application/json",
         },
-        body: new URLSearchParams({
-          "form-name": NETLIFY_FORM_NAME,
+        body: JSON.stringify({
           name: formData.name.trim(),
           email: formData.email.trim(),
           subject: formData.subject.trim(),
           message: formData.message.trim(),
           companyWebsite: formData.companyWebsite,
-          "turnstile-token": turnstileToken,
-        }).toString(),
+          turnstileToken,
+        }),
       });
 
       if (!response.ok) {
+        let message = "Unable to send your message right now";
+        try {
+          const errorBody = (await response.json()) as ContactSendResponse;
+          if (errorBody.error) {
+            message = errorBody.error;
+          }
+        } catch {
+          message = `Error: ${response.status}`;
+        }
+
         setErrors((prev) => ({
           ...prev,
-          form: "Unable to send your message right now",
+          form: message,
+        }));
+        return;
+      }
+
+      const data = (await response.json()) as ContactSendResponse;
+
+      if (!data.success) {
+        setErrors((prev) => ({
+          ...prev,
+          form: data.error || "Unable to send your message right now",
         }));
         return;
       }
@@ -349,17 +377,7 @@ export default function ContactForm() {
         </div>
       )}
 
-      <form
-        name={NETLIFY_FORM_NAME}
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="companyWebsite"
-        onSubmit={handleSubmit}
-        className="space-y-4"
-
-        netlify
-      >
-        <input type="hidden" name="form-name" value={NETLIFY_FORM_NAME} />
+      <form onSubmit={handleSubmit} className="space-y-4">
         <div className="hidden" aria-hidden="true">
           <label htmlFor="companyWebsite">Company website</label>
           <input
@@ -497,7 +515,7 @@ export default function ContactForm() {
           )}
           {turnstileSiteKey && (
             <p className="text-xs leading-5" style={{ color: captionColor }}>
-              Protected by Cloudflare Turnstile and submitted through Netlify Forms.
+              Protected by Cloudflare Turnstile and delivered through Resend.
             </p>
           )}
         </div>
