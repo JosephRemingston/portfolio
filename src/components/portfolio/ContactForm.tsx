@@ -356,6 +356,8 @@ export default function ContactForm() {
         netlify-honeypot="companyWebsite"
         onSubmit={handleSubmit}
         className="space-y-4"
+
+        netlify
       >
         <input type="hidden" name="form-name" value={NETLIFY_FORM_NAME} />
         <div className="hidden" aria-hidden="true">
