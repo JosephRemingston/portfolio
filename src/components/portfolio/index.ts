@@ -12,4 +12,6 @@ export { default as GitHubChart } from "./GitHubChart";
 export { default as SpotifyWidget } from "./SpotifyWidget";
 export { default as IllustrationOverlay } from "./IllustrationOverlay";
 export { default as Contact } from "./Contact";
+export { default as ContactForm } from "./ContactForm";
+export { default as ContactSection } from "./ContactSection";
 export { ResumeChat } from "./ResumeChat";

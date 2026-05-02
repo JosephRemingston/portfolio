@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ThemeProvider, useTheme } from "../../context/ThemeContext";
 import { ANIMATION } from "../../lib/constants";
-import { Hero, Experience, Education, Projects, SkillSlider, Footer, GitHubChart, IllustrationOverlay, ResumeChat, Contact, BlogSection } from "./index";
+import { Hero, Experience, Education, Projects, SkillSlider, Footer, GitHubChart, IllustrationOverlay, ResumeChat, ContactSection, BlogSection } from "./index";
 import BlogDetailModal from "../blog/BlogDetailModal";
 import type { PortfolioData } from "../../types/portfolio";
 import type { Blog } from "../../types/blog";
@@ -50,7 +50,7 @@ function PortfolioContent({ data }: PortfolioProps) {
 
         <BlogSection onSelectBlog={setSelectedBlog} />
 
-        <Contact profile={data.profile} socials={data.socials} />
+        <ContactSection profile={data.profile} socials={data.socials} />
 
         <Footer quotes={data.quotes} handle={data.profile.handle} />
       </motion.div>

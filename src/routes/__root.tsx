@@ -1,4 +1,10 @@
-import { HeadContent, Scripts, createRootRoute, Outlet } from "@tanstack/react-router";
+import {
+  HeadContent,
+  Link,
+  Outlet,
+  Scripts,
+  createRootRoute,
+} from "@tanstack/react-router";
 import appCss from "../styles.css?url";
 import portfolioData from "../data/data.json";
 import { ThemeProvider } from "../context/ThemeContext";
@@ -40,6 +46,7 @@ export const Route = createRootRoute({
   }),
   shellComponent: RootDocument,
   component: RootComponent,
+  notFoundComponent: RootNotFound,
 });
 
 function RootDocument({ children }: { children: React.ReactNode }) {
@@ -60,5 +67,24 @@ function RootComponent() {
         <Outlet />
       </ThemeProvider>
     </AuthProvider>
+  );
+}
+
+function RootNotFound() {
+  return (
+    <div className="mx-auto flex min-h-[50vh] max-w-3xl items-center justify-center px-6 text-center">
+      <div className="space-y-3">
+        <h1 className="text-xl font-semibold">Page not found</h1>
+        <p className="text-sm text-zinc-500">
+          The page you requested does not exist.
+        </p>
+        <Link
+          to="/"
+          className="inline-flex rounded-md border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-900"
+        >
+          Go home
+        </Link>
+      </div>
+    </div>
   );
 }
