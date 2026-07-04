@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
 import { ANIMATION } from "../../lib/constants";
 import Contact from "./Contact";
-import ContactForm from "./ContactForm";
 import type { Profile, Social } from "../../types/portfolio";
 
 interface ContactSectionProps {
@@ -34,21 +33,13 @@ export default function ContactSection({ profile, socials }: ContactSectionProps
       </div>
 
       <div
-        className="mx-auto grid max-w-5xl grid-cols-1 overflow-hidden rounded-xl border lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)]"
+        className="mx-auto max-w-lg rounded-xl border p-5 sm:p-6 lg:p-8"
         style={{
           borderColor: sectionBorder,
           backgroundColor: sectionSurface,
         }}
       >
-        <div
-          className="border-b p-5 sm:p-6 lg:border-b-0 lg:border-r lg:p-8"
-          style={{ borderColor: sectionBorder }}
-        >
-          <Contact profile={profile} socials={socials} />
-        </div>
-        <div className="p-5 sm:p-6 lg:p-8">
-          <ContactForm />
-        </div>
+        <Contact profile={profile} socials={socials} />
       </div>
     </motion.section>
   );
