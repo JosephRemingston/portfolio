@@ -1,4 +1,4 @@
-import { supabase } from './supabase';
+import { requireSupabase } from './supabase';
 import type { Blog, CreateBlogInput, BlogListResponse } from '../types/blog';
 
 const TABLE_NAME = 'blogs';
@@ -28,6 +28,7 @@ export function calculateReadingTime(content: string): number {
  * Create a new blog post
  */
 export async function createBlog(input: CreateBlogInput, authorId: string) {
+  const supabase = requireSupabase();
   const slug = generateSlug(input.title);
   const readingTime = calculateReadingTime(input.content);
   const now = new Date().toISOString();
@@ -66,6 +67,7 @@ export async function createBlog(input: CreateBlogInput, authorId: string) {
  * Update a blog post
  */
 export async function updateBlog(id: string, input: Partial<CreateBlogInput>) {
+  const supabase = requireSupabase();
   const readingTime = input.content ? calculateReadingTime(input.content) : undefined;
   const now = new Date().toISOString();
 
@@ -94,6 +96,7 @@ export async function updateBlog(id: string, input: Partial<CreateBlogInput>) {
  * Publish or unpublish a blog
  */
 export async function togglePublishBlog(id: string, publish: boolean) {
+  const supabase = requireSupabase();
   const now = new Date().toISOString();
 
   const { data, error } = await supabase
@@ -118,6 +121,7 @@ export async function togglePublishBlog(id: string, publish: boolean) {
  * Delete a blog post
  */
 export async function deleteBlog(id: string) {
+  const supabase = requireSupabase();
   const { error } = await supabase.from(TABLE_NAME).delete().eq('id', id);
 
   if (error) throw new Error(`Failed to delete blog: ${error.message}`);
@@ -127,6 +131,7 @@ export async function deleteBlog(id: string) {
  * Get a single blog by ID
  */
 export async function getBlogById(id: string) {
+  const supabase = requireSupabase();
   const { data, error } = await supabase
     .from(TABLE_NAME)
     .select('*')
@@ -141,6 +146,7 @@ export async function getBlogById(id: string) {
  * Get a single blog by slug
  */
 export async function getBlogBySlug(slug: string) {
+  const supabase = requireSupabase();
   const { data, error } = await supabase
     .from(TABLE_NAME)
     .select('*')
@@ -156,6 +162,7 @@ export async function getBlogBySlug(slug: string) {
  * Increment view count
  */
 export async function incrementViewCount(id: string) {
+  const supabase = requireSupabase();
   const { data: blog, error: fetchError } = await supabase
     .from(TABLE_NAME)
     .select('viewCount')
@@ -181,6 +188,7 @@ export async function listPublishedBlogs(
   search = '',
   tags: string[] = []
 ): Promise<BlogListResponse> {
+  const supabase = requireSupabase();
   let query = supabase
     .from(TABLE_NAME)
     .select('*', { count: 'exact' })
@@ -216,6 +224,7 @@ export async function listPublishedBlogs(
  * List all blogs (admin - draft + published)
  */
 export async function listAllBlogs(page = 1, limit = 10, search = '') {
+  const supabase = requireSupabase();
   let query = supabase
     .from(TABLE_NAME)
     .select('*', { count: 'exact' })
@@ -242,6 +251,7 @@ export async function listAllBlogs(page = 1, limit = 10, search = '') {
  * Get featured blogs
  */
 export async function getFeaturedBlogs(limit = 3) {
+  const supabase = requireSupabase();
   const { data, error } = await supabase
     .from(TABLE_NAME)
     .select('*')
@@ -258,6 +268,7 @@ export async function getFeaturedBlogs(limit = 3) {
  * Get related blogs by tags
  */
 export async function getRelatedBlogs(currentBlogId: string, tags: string[], limit = 3) {
+  const supabase = requireSupabase();
   let query = supabase
     .from(TABLE_NAME)
     .select('*')
@@ -282,6 +293,7 @@ export async function getRelatedBlogs(currentBlogId: string, tags: string[], lim
  * Get all unique tags
  */
 export async function getAllTags() {
+  const supabase = requireSupabase();
   const { data, error } = await supabase
     .from(TABLE_NAME)
     .select('tags')

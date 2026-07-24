@@ -232,6 +232,26 @@
       "github": "https://github.com/JosephRemingston/ThrottleX",
       "demo": null,
       "featured": true
+    },{
+      "id": "5",
+      "title": "HireMind – Intelligent ATS Platform",
+      "slug": "throttlex",
+      "description": "Built a production-style backend platform that automates resume screening by parsing PDF resumes, extracting structured candidate information, and ranking applicants against job descriptions using a multi-factor matching engine. The system combines semantic embeddings, skill matching, domain alignment, experience analysis, education, certifications, and explainable scoring to generate transparent candidate rankings. Designed with asynchronous processing using BullMQ, Redis, Amazon S3, and MongoDB to support scalable batch resume ingestion",
+      "tags": [
+        "Node.js",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "Jest",
+        "AWS SES",
+        "BullMQ",
+        "Redis",
+        "AWS",
+        "Transformers"
+      ],
+      "github": "https://github.com/JosephRemingston/HireMind",
+      "demo": "https://design-driven-core.vercel.app/",
+      "featured": true
     }
   ],
   "blogs": [

@@ -1,5 +1,9 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { supabase } from '../lib/supabase';
+import {
+  isSupabaseConfigured,
+  SUPABASE_MISSING_CONFIG_MESSAGE,
+  supabase,
+} from '../lib/supabase';
 import type { User } from '@supabase/supabase-js';
 
 interface AuthContextType {
@@ -21,6 +25,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   // Check authentication status on mount
   useEffect(() => {
+    if (!supabase) {
+      setError(SUPABASE_MISSING_CONFIG_MESSAGE);
+      setIsLoading(false);
+      return;
+    }
+
     const checkAuth = async () => {
       try {
         const { data } = await supabase.auth.getSession();
@@ -47,6 +57,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const login = async (email: string, password: string) => {
+    if (!supabase) {
+      const configError = new Error(SUPABASE_MISSING_CONFIG_MESSAGE);
+      setError(configError.message);
+      throw configError;
+    }
+
     try {
       setError(null);
       const { error: signInError } = await supabase.auth.signInWithPassword({
@@ -62,6 +78,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const logout = async () => {
+    if (!supabase) {
+      setUser(null);
+      return;
+    }
+
     try {
       setError(null);
       const { error: signOutError } = await supabase.auth.signOut();
@@ -74,6 +95,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const signUp = async (email: string, password: string) => {
+    if (!supabase) {
+      const configError = new Error(SUPABASE_MISSING_CONFIG_MESSAGE);
+      setError(configError.message);
+      throw configError;
+    }
+
     try {
       setError(null);
       const { error: signUpError } = await supabase.auth.signUp({
@@ -93,7 +120,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       value={{
         user,
         isLoading,
-        isAuthenticated: !!user,
+        isAuthenticated: isSupabaseConfigured && !!user,
         error,
         login,
         logout,

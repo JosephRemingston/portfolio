@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Save, Trash2, Loader } from 'lucide-react';
 import TipTapEditor from '../blog/TipTapEditor';
-import { supabase } from '../../lib/supabase';
+import { requireSupabase, supabase } from '../../lib/supabase';
 import type { Blog, CreateBlogInput } from '../../types/blog';
 import { createBlog, updateBlog, deleteBlog, togglePublishBlog } from '../../lib/blog-api';
 
@@ -54,7 +54,8 @@ export default function BlogEditor({ blog, onBack, onSave }: BlogEditorProps) {
         await updateBlog(blog.id, input);
         setSuccess('Blog updated successfully');
       } else {
-        const { data: sessionData } = await supabase.auth.getSession();
+        const client = requireSupabase();
+        const { data: sessionData } = await client.auth.getSession();
         const userId = sessionData?.session?.user?.id;
         if (!userId) {
           // For public/demo mode, generate a UUID
